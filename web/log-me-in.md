@@ -1,4 +1,5 @@
 # LOG-ME-IN
+*Solution and write-up by team [Kalmarunionen](https://capturetheflag.withgoogle.com/scoreboard/kalmarunionen).*
 
 This challenge exploits the fact that we can send an array which when parsed makes the MySQL server execute a query similar to the following:
 ```
