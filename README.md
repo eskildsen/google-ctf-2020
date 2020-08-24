@@ -7,3 +7,4 @@ These are our writeups for the Google CTF 2020 event. We participated as the tea
 **WEB**
 - [LOG-ME-IN](web/log-me-in.md)
 - [Pasteurize](web/pasteurize.md)
+- [All the little things](web/all-the-little-things.md)
